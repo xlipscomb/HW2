@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title> HW3 </title>
+        <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+        
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <i class="fas fa-square-root-alt"></i>
+    </head>
+
+    <body style="background-color: cadetblue;">
+        <header>
+    
+            <h1 style= "color: darkgray;text-align:center;"> Homework 3 </h1>
+        
+        <form action="index.html" style="text-align: center; font-family: 'Titillium Web', sans-serif;">
+        </header>
+        <div>  
+            <p>
+                <h2> Force Formula: F = M*A </h2>
+            </p> 
+            <label for = "inputfeild">Mass</label>
+            <input style="padding: 10px; width: 100%; display: inline-flex; margin: 0 auto; " type="text" id="Mass" name="mass" placeholder= "Please enter the Mass."><br>
+            <label for = "inputfeild">Acceleration</label>
+            <input style="padding: 10px; width: 100%; display: inline-flex; margin: 0 auto; "type="text" id="Acceleration" name="acceleration"placeholder= "Please enter the Accleration."><br>
+            <input type="button" id="cal" onClick = "force();" value="Calculate">
+            <p id="answer1">
+            </p>
+        </div>  
+        <div> 
+            <p>
+                <h2>Displacement Formula: D = V * T - (1/2) * (A * T^2)</h2>
+            </p> 
+            <label for = "inputfeild">Velocity</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Velocity" name="velocity" placeholder= "Please enter the Velocity."><br>
+            <label for = "inputfeild">Time</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Time" name="time" placeholder= "Please enter the Time period."><br>
+            <label for = "inputfeild">Acceleration</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Acceleration2" name="acceleration" placeholder= "Please enter the Accleration."><br>
+            <input type="button" id="cal" onClick = "displacement();" value="Calculate">
+            <p id="answer2">
+            </p>
+        </div>  
+        <div> 
+            <p>
+             <h2>Quadratic Formula: (-B +/- sqrt(B^2 – 4AC) / (2A) </h2>
+            </p>
+            <label for = "inputfeild">Side1</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Side1" name="side1" placeholder= "Please enter the Length of Side 1."><br>
+            <label for = "inputfeild">Side2</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Side2" name="side2" placeholder= "Please enter the Length of Side 2."><br>
+            <label for = "inputfeild">Side3</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Side3" name="side3" placeholder= "Please enter the Length of Side 3."><br>
+            <input type="button" id="cal" onClick = "quadratic();" value="Calculate">
+            <p id="answer3">
+            </p>
+        </div>  
+        <div> 
+            <p>
+             <h2> Annuity formula: PMT * (1 - (1 / ((1 + R) ^ N))  / R)  </h2>
+            </p>
+            <label for = "inputfeild">Amount</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Amount" name="amount" placeholder= "Please enter the Priciple Amount without the dollar sign."><br>
+            <label for = "inputfeild">Rate</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Rate" name="rate" placeholder= "Please enter the Rate as a decmial number  ex .17"><br>
+            <label for = "inputfeild">Periods</label>
+            <input style="padding: 10px; width: 100%; display: inline; margin: 0 auto; "type="text" id="Periods" name="periods" placeholder= "Please enter the amount of Periods."><br>
+            <input type="button" id="cal" onClick = "annuity();" value="Calculate">
+            <p id="answer4">
+            </p>
+        </div>  
+       
+     <script src="script.js"></script>
+    </body>
+    </html>
